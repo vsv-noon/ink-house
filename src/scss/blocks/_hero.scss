@@ -1,0 +1,67 @@
+.hero {
+  margin: 0 auto 70px auto;
+
+  padding: 0 165px;
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  gap: 30px;
+
+  .hero-text {
+    padding-top: 145px;
+  }
+
+  .hero-img {
+    width: 540px;
+    height: 621px;
+    background-image: url(./../img/bird.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    font-family: var(--font-main);
+    font-weight: var(--fontWeight-main);
+    color: var(--black);
+    font-size: 60px;
+    line-height: 66px;
+    margin-bottom: 20px;
+    // letter-spacing: 0.0001px;
+
+    span {
+      color: var(--green)
+    }
+  }
+
+  p {
+    max-width: 540px;
+    font-family: var(--font-main);
+    font-weight: var(--fontWeight-main);
+    color: var(--light-gray);
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 60px;
+  }
+
+  .btn {
+    width: 225px;
+    height: 65px;
+    background-color: transparent;
+    border: 1px solid var(--green);
+    color: var(--green);
+    font-size: 20px;
+    line-height: 23,48px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    color: var(--white);
+    background-color: var(--green);
+  }
+
+  .btn:active {
+    color: var(--green);
+    background-color: var(--light-green);
+  }
+}

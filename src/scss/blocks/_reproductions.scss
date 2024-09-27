@@ -1,0 +1,66 @@
+#reproductions {
+  margin: 0 auto;
+  width: 100%;
+  width: 1440px;
+  padding: 0 165px;
+  display: flex;
+  flex-direction: column;
+
+  .tabs-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h2 {
+    font-family: var(--font-main);
+    font-weight: var(--font-main);
+    color: var(--black);
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .tabs-control {
+    display: flex;
+    gap: 28px;
+  }
+
+  .control-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--light-green-btn);
+    font-size: 20px;
+    line-height: 23.48px;
+    border: 1px solid (var(--light-green));
+    border-radius: 20px;
+    font-family: var(--font-main);
+    font-weight: var(--fontWeight-main);
+    color: var(--black);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .control-item:hover {
+    color: var(--white);
+    background-color: var(--green);
+    border: 1px solid (var(--green));
+  }
+
+  .control-item:active {
+    color: var(--green);
+    background-color: var(--light-green-btn);
+    border: 1px solid (var(--green));
+  }
+
+  .control-item.active {
+    color: var(--white);
+    background-color: var(--dark-green);
+    pointer-events: none;
+  }
+
+  .control-container {
+    width: 1110px;
+    height: 1564px;
+  }
+}

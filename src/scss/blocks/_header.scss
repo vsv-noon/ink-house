@@ -7,10 +7,6 @@
   width: 1440px;
   height: 100px;
   background-color: var(--light-green);
-  color: var(--black);
-  font-size: 20px;
-  line-height: 23.48px;
-  font-family: var(--font-main);
 
   & li:hover {
     color: var(--dark-green);
@@ -31,6 +27,8 @@
   }
 
   .logo-text {
+    font-family: var(--font-main);
+    font-weight: var(--fontWeight-bold);
     color: var(--green);
     font-size: 20px;
     line-height: 23.48px;
@@ -40,13 +38,32 @@
     display: flex;
     gap: 60px;
     list-style: none;
+  }
+
+  & li {
     cursor: pointer;
   }
 
-  & li:hover,
+  & a {
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-weight: var(--fontWeight-main);
+    color: var(--black);
+    font-size: 20px;
+    line-height: 23.48px;
+  }
+
+  & a:hover,
   & li:hover svg {
     color: var(--dark-green);
     stroke: var(--dark-green);
+    transition: all 0.3s ease;
+  }
+
+  & a:active,
+  & li:active svg {
+    color: var(--black);
+    stroke: var(--black);
     transition: all 0.3s ease;
   }
 }
