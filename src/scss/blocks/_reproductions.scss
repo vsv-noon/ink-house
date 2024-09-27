@@ -9,6 +9,7 @@
   .tabs-header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
 
   h2 {
@@ -62,5 +63,11 @@
   .control-container {
     width: 1110px;
     height: 1564px;
+  }
+
+  .tabs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
   }
 }
