@@ -1,5 +1,6 @@
 /* Base */
-
+@import "./base/reset";
+@import "./base/vars";
 
 /* Blocks */
 @import "./blocks/*.scss";

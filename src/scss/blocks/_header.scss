@@ -1,0 +1,52 @@
+.header {
+  margin: 0 auto;
+  padding: 0 165px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1440px;
+  height: 100px;
+  background-color: var(--light-green);
+  color: var(--black);
+  font-size: 20px;
+  line-height: 23.48px;
+  font-family: var(--font-main);
+
+  & li:hover {
+    color: var(--dark-green);
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &:hover p,
+    &:hover svg {
+      color: var(--dark-green);
+      fill: var(--dark-green);
+      transition: all 0.3s ease;
+    }
+  }
+
+  .logo-text {
+    color: var(--green);
+    font-size: 20px;
+    line-height: 23.48px;
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  & li:hover,
+  & li:hover svg {
+    color: var(--dark-green);
+    stroke: var(--dark-green);
+    transition: all 0.3s ease;
+  }
+}

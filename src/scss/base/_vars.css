@@ -1,0 +1,12 @@
+:root {
+  --font-main: 'Raleway', sans-serif;
+
+  --fontWeight-main: 500;
+  --fontWeight-bold: 700;
+
+  --black: rgba(44, 45, 53, 1);
+  --light-gray: rgba(134, 146, 139, 1);
+  --green: rgba(89, 141, 102, 1);
+  --light-green: rgba(225, 237, 230, 1);
+  --dark-green: rgba(55, 107, 68, 1);
+}
