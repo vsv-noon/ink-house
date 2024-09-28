@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  // pointer-events: none;
+  // cursor: pointer;
+
+  // &:hover p,
+  // &:hover svg {
+  //   color: var(--dark-green);
+  //   fill: var(--dark-green);
+  //   transition: all 0.3s ease;
+  // }
+}
+
+.logo-text {
+  font-family: var(--font-main);
+  font-weight: var(--fontWeight-bold);
+  color: var(--green);
+  font-size: 20px;
+  line-height: 23.48px;
+}
