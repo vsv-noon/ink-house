@@ -1,14 +1,16 @@
 #reproductions {
   margin: 0 auto;
   width: 100%;
-  width: 1440px;
-  padding: 0 165px;
+  max-width: calc(1440px - 330px);
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   .tabs-header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    max-width: calc(1440px - 330px);
     margin-bottom: 30px;
   }
 
@@ -70,5 +72,42 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     margin-bottom: 68px;
+    transition: all 1s ease;
+    height: 1490px;;
   }
+
+  @media (max-width: 1150px) {
+    .tabs-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .tabs-animation {
+    animation: showBlock 1.5s linear forwards;
+  }
+
+  @keyframes showBlock {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .tabs-hide-animation {
+    animation: hideBlock 1.5s linear forwards;
+  }
+
+  @keyframes hideBlock {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+     }
+  }
+
 }

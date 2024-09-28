@@ -10,7 +10,6 @@
     "logo reproductions novelties about socials"
     "contact reproductions novelties about socials";
 
-
   .footer__logo {
     grid-area: logo;
     margin-bottom: 30px;
@@ -40,6 +39,38 @@
   .footer__socials-container {
     grid-area: socials;
     height: 5px;
+  }
+
+  @media (max-width: 1300px) {
+    grid-template-areas:
+    "logo logo contacts contacts"
+    "reproductions novelties about socials"
+    "reproductions novelties about socials";
+
+    .footer__logo {
+      grid-area: logo;
+    }
+  
+    .footer__contact {
+      grid-area: contact;
+      width: 170px;
+    }
+  
+    .footer__reproductions {
+      grid-area: reproductions;
+    }
+  
+    .footer__novelties {
+      grid-area: novelties;
+    }
+  
+    .footer__about {
+      grid-area: about;
+    }
+  
+    .footer__socials-container {
+      grid-area: socials;
+    }
   }
 
   h3 {

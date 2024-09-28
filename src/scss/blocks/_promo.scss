@@ -3,10 +3,12 @@
   padding-top: 70px;
   padding-left: 165px;
   text-align: start;
-  max-width: 1440px;
   width: 100%;
+  max-width: 1440px;
   height: 574px;
   background-image: url(./../img/promo-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
   margin-bottom: 70px;
 
   .title {
