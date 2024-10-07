@@ -1,45 +1,131 @@
 .header {
   margin: 0 auto;
-  padding: 0 165px;
+  padding: 38px 165px 27px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   max-width: 1440px;
-  height: 100px;
   background-color: var(--light-green);
 
-  & li:hover {
-    color: var(--dark-green);
+  @media (max-width: 1000px) {
+    padding: 38px 39px 27px;
   }
 
-  .nav ul {
+  @media (max-width: 700px) {
+    padding: 17px 33px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+  }  
+
+  @media (max-width: 595px) {
+    background-color: #fff;
+    padding: 0;
+    z-index: 10;  
+  }
+
+  .logo {
+    @media (max-width: 595px) {      
+      padding-top: 15px;
+      margin: 0;
+      z-index: 1;
+    }
+  }
+
+
+  .nav {
+    display: flex;
+    gap: 60px;
+
+    @media (max-width: 700px) {
+      gap: 125px;
+    }  
+
+    @media (max-width: 595px) {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--light-green);
+      padding: 15px 0;
+    }
+  }
+
+  .mobile-menu {
     display: flex;
     gap: 60px;
     list-style: none;
+
+    @media (max-width: 768px) {
+      gap: 60px;
+    }
+
+    @media (max-width: 700px) {
+      gap: 60px;
+    }
+
+    @media (max-width: 595px) {
+      position: fixed;
+      // top: 0;
+      // top: -100%;
+      top: 68px;
+
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      // height: 100%;
+      height: 0;
+      background-color: var(--light-green);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
   }
 
-  & li {
+  .mobile-menu-open {
+    top: 68px;
+    height: 100%;
+  }
+
+  li,
+  .cart {
     cursor: pointer;
   }
 
-  & a {
+  .cart {
+    @media (max-width: 595px) {
+      padding-right: 15px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    li:last-child {
+      // padding-left: 78px;
+    }
+  }
+
+  a {
     text-decoration: none;
     font-family: var(--font-main);
     font-weight: var(--fontWeight-main);
     color: var(--black);
     font-size: 20px;
     line-height: 23.48px;
+
+    @media (max-width: 768px) { 
+      font-size: 18px;
+      line-height: 21.13px;
+    }
   }
 
-  & a:hover,
-  & li:hover svg {
+  a:hover,
+  li:hover,
+  .cart:hover svg {
     color: var(--dark-green);
     stroke: var(--dark-green);
     transition: all 0.3s ease;
   }
 
-  & a:active,
-  & li:active svg {
+  a:active,
+ .cart:active svg {
     color: var(--black);
     stroke: var(--black);
     background-color: var(--light-green-btn);

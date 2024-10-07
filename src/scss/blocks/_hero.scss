@@ -1,46 +1,94 @@
 .hero {
   margin: 0 auto 70px auto;
-
-  padding: 0 165px;
   display: flex;
-  max-width: 1440px;
+  max-width: calc(1440px - 330px);
   width: 100%;
   gap: 30px;
 
-  .hero-text {
-    padding-top: 145px;
+  @media(max-width: 700px) {
+    margin: 0 15px 0px;
+    gap: 15px;
   }
 
   .hero-img {
-    width: 540px;
-    height: 621px;
+    width: 50%;
+    padding-top: 310px;
+    padding-bottom: 310px;
     background-image: url(./../img/bird.jpg);
     background-size: contain;
+    background-position: right;
     background-repeat: no-repeat;
+    
+    @media(max-width: 768px) {
+      padding-bottom: 200px;
+      padding-top: 180px;
+    }
+
+    @media(max-width: 700px) {
+      // padding-top: 0px;
+      padding-bottom: 160px;
+      // background-position-y: bottom;
+      width: 40%;
+    }
+
+    @media(max-width: 550px) {
+      display: none;
+    }
+  }
+
+  .hero-text {
+    width: 50%;
+    padding-top: 145px;
+
+    @media(max-width: 768px) {
+      padding-top: 35px;
+    }
+
+    @media(max-width: 700px) {
+      padding-top: 60px;
+    }
   }
 
   h1 {
     font-family: var(--font-main);
     font-weight: var(--fontWeight-main);
     color: var(--black);
+    // font-size: 3.5vw;
     font-size: 60px;
     line-height: 66px;
     margin-bottom: 20px;
-    // letter-spacing: 0.0001px;
 
     span {
       color: var(--green)
+    }
+
+    @media(max-width: 768px) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @media(max-width: 700px) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 10px;
     }
   }
 
   p {
     max-width: 540px;
-    font-family: var(--font-main);
-    font-weight: var(--fontWeight-main);
     color: var(--light-gray);
-    font-size: 18px;
-    line-height: 27px;
     margin-bottom: 60px;
+
+    @media(max-width: 768px) {
+      max-width: 330px;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 700px) {
+      max-width: 249px;
+      margin-bottom: 11px;
+      line-height: 24px;
+    }
   }
 
   .btn {
@@ -53,6 +101,17 @@
     line-height: 23,48px;
     transition: all 0.3s ease;
     cursor: pointer;
+
+    @media(max-width: 768px) {
+      width: 210px;
+      height: 60px;
+    }
+
+    @media (max-width: 768px) {
+      width: 170px;
+      height: 50px;
+      font-size: 18px;
+    }
   }
 
   .btn:hover {

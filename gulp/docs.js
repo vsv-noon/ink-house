@@ -77,9 +77,9 @@ gulp.task('sass:docs', function () {
 gulp.task('images:docs', function () {
 	return gulp
   .src('./src/img/**/*')
-  .pipe(changed('./build/img/'))
+  .pipe(changed('./docs/img/'))
   .pipe(imagemin({ verbose: true }))
-  .pipe(gulp.dest('./build/img/'));
+  .pipe(gulp.dest('./docs/img/'));
 });
 
 gulp.task('fonts:docs', function () {

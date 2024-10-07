@@ -1,10 +1,11 @@
 #reproductions {
-  margin: 0 auto;
+  margin: 0 auto 68px;
   width: 100%;
   max-width: calc(1440px - 330px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-margin-top: 30px;
 
   .tabs-header {
     display: flex;
@@ -12,19 +13,30 @@
     width: 100%;
     max-width: calc(1440px - 330px);
     margin-bottom: 30px;
+
+    @media (max-width: 1150px) {
+      padding: 0 40px;
+    }
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+      margin-bottom: 20px;
+     }
   }
 
   h2 {
-    font-family: var(--font-main);
-    font-weight: var(--font-main);
-    color: var(--black);
-    font-size: 40px;
     line-height: 44px;
   }
 
   .tabs-control {
     display: flex;
     gap: 28px;
+
+    @media (max-width: 550px) {
+      width: 100%;
+      overflow-x: auto;
+      scrollbar-width: 1px;
+    }
   }
 
   .control-item {
@@ -33,15 +45,20 @@
     align-items: center;
     padding: 10px 20px;
     background-color: var(--light-green-btn);
+    font-family: var(--font-main);
+    font-weight: var(--fontWeight-main);
+    color: var(--black);
     font-size: 20px;
     line-height: 23.48px;
     border: 1px solid (var(--light-green));
     border-radius: 20px;
-    font-family: var(--font-main);
-    font-weight: var(--fontWeight-main);
-    color: var(--black);
     cursor: pointer;
     transition: all 0.3s ease;
+
+    @media (max-width: 700px) {
+      font-size: 18px;
+      line-height: 21.13px;
+    }
   }
 
   .control-item:hover {
@@ -71,14 +88,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    margin-bottom: 68px;
     transition: all 1s ease;
-    height: 1490px;;
-  }
+    height: 1490px;
 
-  @media (max-width: 1150px) {
-    .tabs-container {
+    @media (max-width: 1150px) {
+      height: 2250px;
       grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 700px) {
+      height: 1602px;
+    }
+
+    @media (max-width: 550px) {
+      grid-template-columns: 1fr;
+      height: calc(1058px * 3 + 60px);
     }
   }
 
@@ -107,7 +131,7 @@
 
     100% {
       opacity: 0;
-     }
+    }
   }
 
 }

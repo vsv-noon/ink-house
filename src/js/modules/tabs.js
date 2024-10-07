@@ -11,7 +11,7 @@ function tabs() {
       })
       .then((data) => {
         data.forEach((item) => {
-          if (item.country == country) {
+          if (item.country === country) {
             tabsContainer.innerHTML += `
             <div class="card">
               <img class="card-img" src=${item.img} alt="img">
@@ -35,9 +35,13 @@ function tabs() {
 
       tabsControlButton.forEach((el) => {
         el.classList.remove('active');
-      });
 
-      event.currentTarget.classList.add('active');
+        if (el.getAttribute('data-country') == country) {
+          el.classList.add('active');
+        }
+      });
+      // event.currentTarget.classList.add('active');
+
       tabsContainer.classList.add('tabs-hide-animation');
       tabsContainer.classList.remove('tabs-animation');
 

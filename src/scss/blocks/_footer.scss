@@ -2,74 +2,84 @@
   margin: 0 auto;
   max-width: 1440px;
   padding: 23px 165px;
-  height: 168px;
+  // height: 168px;
   background-color: var(--light-green);
   display: grid;
+  align-items: start;
   // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "logo reproductions novelties about socials"
-    "contact reproductions novelties about socials";
+    'logo reproductions novelties about socials'
+    'contact reproductions novelties about socials';
 
-  .footer__logo {
+  
+
+  &__logo {
     grid-area: logo;
     margin-bottom: 30px;
   }
 
-  .footer__contact {
+  &__contact {
     grid-area: contact;
     width: 170px;
     margin-right: 115px;
   }
 
-  .footer__reproductions {
+  &__reproductions {
     grid-area: reproductions;
     margin-right: 60px;
   }
 
-  .footer__novelties {
+  &__novelties {
     grid-area: novelties;
     margin-right: 60px;
   }
 
-  .footer__about {
+  &__about {
     grid-area: about;
-   margin-right: 260px;
+    margin-right: 260px;
   }
 
-  .footer__socials-container {
+  &__socials-container {
     grid-area: socials;
-    height: 5px;
+    // height: 5px;
   }
 
-  @media (max-width: 1300px) {
-    grid-template-areas:
-    "logo logo contacts contacts"
-    "reproductions novelties about socials"
-    "reproductions novelties about socials";
+  @media (max-width: 1130px) {
+    padding: 23px 35px;
+    // justify-content: space-between;
 
-    .footer__logo {
+    grid-template-areas:
+      'logo logo contact contact'
+      'reproductions novelties about socials';
+
+    &__logo {
       grid-area: logo;
+      margin-bottom: 50px;
     }
-  
-    .footer__contact {
+
+    &__contact {
       grid-area: contact;
       width: 170px;
+      margin-right: 0px;
     }
-  
-    .footer__reproductions {
+
+    &__reproductions {
       grid-area: reproductions;
+      margin-right: 0px;
     }
-  
-    .footer__novelties {
+
+    &__novelties {
       grid-area: novelties;
+      margin-right: 0px;
     }
-  
-    .footer__about {
+
+    &__about {
       grid-area: about;
+      margin-right: 0px;
     }
-  
-    .footer__socials-container {
-      grid-area: socials;
+
+    &__socials-container {
+      grid-area: socials; 
     }
   }
 
@@ -88,12 +98,17 @@
     text-decoration: none;
     font-size: 18px;
     line-height: 27px;
+
+    @media (max-width: 700px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   ul {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 6px;    
   }
 
   li {
@@ -105,7 +120,7 @@
     gap: 30px;
   }
 
-  .copyright {
+  .copyright p {
     display: flex;
     flex-direction: column;
     gap: 6px;
