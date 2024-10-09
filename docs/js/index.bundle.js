@@ -1,6 +1,27 @@
  (function() { 
  	"use strict";
 
+function mobileMenu() {
+  const mobileMenuButton = document.querySelector('.mobile-menu-btn');
+  const mobileMenu = document.querySelector('.nav-menu');
+
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenuButton.classList.toggle('menu-active');
+    mobileMenu.classList.toggle('nav-menu-open');
+    document.body.classList.toggle('lock');
+  })
+
+  document.addEventListener('click', (event) => {
+    if (!mobileMenu.contains(event.target) && event.target !== mobileMenuButton || event.target.classList.contains('nav-link')) {
+      mobileMenu.classList.remove('nav-menu-open');
+      mobileMenuButton.classList.remove('menu-active');
+      document.body.classList.remove('lock');
+    }
+  })
+}
+
+ var mobile_menu = (mobileMenu);
+;
 function tabs() {
   const tabsControlButton = document.querySelectorAll('.control-item');
   const tabsContainer = document.querySelector('.tabs-container');
@@ -14,7 +35,7 @@ function tabs() {
       })
       .then((data) => {
         data.forEach((item) => {
-          if (item.country == country) {
+          if (item.country === country) {
             tabsContainer.innerHTML += `
             <div class="card">
               <img class="card-img" src=${item.img} alt="img">
@@ -38,9 +59,12 @@ function tabs() {
 
       tabsControlButton.forEach((el) => {
         el.classList.remove('active');
+
+        if (el.getAttribute('data-country') == country) {
+          el.classList.add('active');
+        }
       });
 
-      event.currentTarget.classList.add('active');
       tabsContainer.classList.add('tabs-hide-animation');
       tabsContainer.classList.remove('tabs-animation');
 
@@ -60,7 +84,8 @@ function tabs() {
 ;
 
 
-modules_tabs();
 
+modules_tabs();
+mobile_menu();
  })()
 ;
