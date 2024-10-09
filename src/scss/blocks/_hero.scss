@@ -2,12 +2,15 @@
   margin: 0 auto 70px auto;
   display: flex;
   max-width: calc(1440px - 330px);
-  width: 100%;
   gap: 30px;
 
-  @media(max-width: 700px) {
-    margin: 0 15px 0px;
-    gap: 15px;
+  @media (max-width: 700px) {
+    margin: 0 25px 0px;
+    gap: 25px;
+  }
+
+  @media (max-width: 550px) {
+    margin: 0 15px 53px;
   }
 
   .hero-img {
@@ -16,22 +19,20 @@
     padding-bottom: 310px;
     background-image: url(./../img/bird.jpg);
     background-size: contain;
-    background-position: right;
     background-repeat: no-repeat;
-    
-    @media(max-width: 768px) {
+
+    @media (max-width: 768px) {
       padding-bottom: 200px;
       padding-top: 180px;
     }
 
-    @media(max-width: 700px) {
-      // padding-top: 0px;
-      padding-bottom: 160px;
-      // background-position-y: bottom;
+    @media (max-width: 700px) {
+      padding-bottom: 150px;
+      background-position: right;
       width: 40%;
     }
 
-    @media(max-width: 550px) {
+    @media (max-width: 550px) {
       display: none;
     }
   }
@@ -40,11 +41,17 @@
     width: 50%;
     padding-top: 145px;
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       padding-top: 35px;
     }
 
-    @media(max-width: 700px) {
+    @media (max-width: 700px) {
+      width: 55%;
+      padding-top: 50px;
+    }
+
+    @media (max-width: 550px) {
+      width: 100%;
       padding-top: 60px;
     }
   }
@@ -53,24 +60,29 @@
     font-family: var(--font-main);
     font-weight: var(--fontWeight-main);
     color: var(--black);
-    // font-size: 3.5vw;
     font-size: 60px;
     line-height: 66px;
     margin-bottom: 20px;
 
     span {
-      color: var(--green)
+      color: var(--green);
     }
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       font-size: 40px;
       line-height: 40px;
     }
 
-    @media(max-width: 700px) {
+    @media (max-width: 700px) {
       font-size: 36px;
       line-height: 36px;
       margin-bottom: 10px;
+    }
+
+    @media (max-width: 550px) {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 17px;
     }
   }
 
@@ -79,7 +91,7 @@
     color: var(--light-gray);
     margin-bottom: 60px;
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       max-width: 330px;
       margin-bottom: 40px;
     }
@@ -88,6 +100,12 @@
       max-width: 249px;
       margin-bottom: 11px;
       line-height: 24px;
+    }
+
+    @media (max-width: 550px) {
+      max-width: 100%;
+      margin-bottom: 40px;
+      line-height: 21px;
     }
   }
 
@@ -98,19 +116,23 @@
     border: 1px solid var(--green);
     color: var(--green);
     font-size: 20px;
-    line-height: 23,48px;
+    line-height: 23, 48px;
     transition: all 0.3s ease;
     cursor: pointer;
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       width: 210px;
       height: 60px;
     }
 
-    @media (max-width: 768px) {
-      width: 170px;
+    @media (max-width: 700px) {
+      width: 175px;
       height: 50px;
       font-size: 18px;
+    }
+
+    @media (max-width: 550px) {
+      width: 154px;
     }
   }
 

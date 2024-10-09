@@ -1,4 +1,11 @@
-body.lock {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.lock {
   overflow: hidden;
 }
 
@@ -17,7 +24,11 @@ h2 {
 
   @media (max-width: 700px) {
     font-size: 24px;
-    line-height: 26.4px;
+    line-height: 27px;
+  }
+
+  @media (max-width: 550px) {
+    line-height: 25px;
   }
 }
 
@@ -26,10 +37,15 @@ p {
   font-weight: var(--fontWeight-main);
   color: var(--black);
   font-size: 18px;
-  line-height: 27px;  
+  line-height: 27px;
 
   @media (max-width: 700px) {
     font-size: 16px;
-    line-height: 20.4px;
+    line-height: 21px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 14px;
+    line-height: 21px;
   }
 }

@@ -20,12 +20,25 @@
 
     @media (max-width: 700px) {
       flex-direction: column;
+      padding: 0px 35px;
       margin-bottom: 20px;
-     }
+    }
+
+    @media (max-width: 550px) {
+      padding: 0 15px;
+    }
   }
 
   h2 {
     line-height: 44px;
+
+    @media (max-width: 700px) {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 550px) {
+      margin-bottom: 11px;
+    }
   }
 
   .tabs-control {
@@ -34,8 +47,10 @@
 
     @media (max-width: 550px) {
       width: 100%;
+      gap: 15px;
       overflow-x: auto;
-      scrollbar-width: 1px;
+      // scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
     }
   }
 
@@ -97,12 +112,12 @@
     }
 
     @media (max-width: 700px) {
-      height: 1602px;
+      height: 1582px;
     }
 
     @media (max-width: 550px) {
       grid-template-columns: 1fr;
-      height: calc(1058px * 3 + 60px);
+      height: calc(1058px * 3 + 52px);
     }
   }
 
@@ -133,5 +148,4 @@
       opacity: 0;
     }
   }
-
 }

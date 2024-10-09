@@ -2,16 +2,12 @@
   margin: 0 auto;
   max-width: 1440px;
   padding: 23px 165px;
-  // height: 168px;
   background-color: var(--light-green);
   display: grid;
   align-items: start;
-  // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     'logo reproductions novelties about socials'
     'contact reproductions novelties about socials';
-
-  
 
   &__logo {
     grid-area: logo;
@@ -41,45 +37,125 @@
 
   &__socials-container {
     grid-area: socials;
-    // height: 5px;
   }
 
-  @media (max-width: 1130px) {
+  @media (max-width: 1300px) {
     padding: 23px 35px;
-    // justify-content: space-between;
 
     grid-template-areas:
       'logo logo contact contact'
       'reproductions novelties about socials';
 
     &__logo {
-      grid-area: logo;
       margin-bottom: 50px;
     }
 
     &__contact {
-      grid-area: contact;
-      width: 170px;
+      width: 100%;
+      display: flex;
+      justify-content: end;
       margin-right: 0px;
     }
 
     &__reproductions {
-      grid-area: reproductions;
       margin-right: 0px;
     }
 
     &__novelties {
-      grid-area: novelties;
       margin-right: 0px;
     }
 
     &__about {
-      grid-area: about;
       margin-right: 0px;
     }
 
     &__socials-container {
-      grid-area: socials; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+    }
+  }
+
+  @media (max-width: 700px) {
+    justify-content: space-between;
+
+    grid-template-areas:
+      'logo contact contact'
+      'reproductions novelties about'
+      'socials socials socials';
+
+    &__logo {
+      margin-bottom: 45px;
+    }
+
+    &__contact {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      margin-right: 0px;
+    }
+
+    &__reproductions {
+      margin-right: 0px;
+      margin-bottom: 30px;
+    }
+
+    &__novelties {
+      margin-right: 0px;
+    }
+
+    &__about {
+      margin-right: 0px;
+    }
+
+    &__socials-container {
+      position: relative;
+
+      padding-left: 20px;
+    }
+
+    &__socials-container::before {
+      position: absolute;
+      content: '';
+      top: -16px;
+      right: -5px;
+      width: 510px;
+      height: 1px;
+      background-color: #c3d1c6;
+    }
+  }
+
+  @media (max-width: 550px) {
+    padding: 23px 25px 23px 15px;
+
+    grid-template-areas:
+      'logo logo'
+      'contact reproductions'
+      'novelties about'
+      'socials socials';
+
+    &__logo {
+      margin-bottom: 20px;
+    }
+
+    &__reproductions {
+      margin-bottom: 20px;
+    }
+
+    &__about {
+      margin-bottom: 40px;
+    }
+
+    &__socials-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__socials-container::before {
+      width: 290px;
     }
   }
 
@@ -89,6 +165,11 @@
     color: var(--black);
     font-size: 20px;
     line-height: 23.48px;
+
+    @media (max-width: 550px) {
+      font-size: 16px;
+      line-height: 18.78px;
+    }
   }
 
   a {
@@ -108,7 +189,7 @@
   ul {
     display: flex;
     flex-direction: column;
-    gap: 6px;    
+    gap: 6px;
   }
 
   li {
@@ -117,17 +198,25 @@
 
   &__socials {
     display: flex;
+    align-items: center;
     gap: 30px;
   }
 
-  .copyright p {
+  .copyright {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    font-family: var(--font-main);
-    font-weight: var(--fontWeight-main);
-    color: var(--light-gray);
-    font-size: 12px;
-    line-height: 14.4px;
+
+    @media (max-width: 700px) {
+      flex-direction: row;
+    }
+
+    p {
+      font-family: var(--font-main);
+      font-weight: var(--fontWeight-main);
+      color: var(--light-gray);
+      font-size: 12px;
+      line-height: 14.4px;
+    }
   }
 }
