@@ -2,7 +2,7 @@ function tabs() {
   const tabsControlButton = document.querySelectorAll('.control-item');
   const tabsContainer = document.querySelector('.tabs-container');
 
-  function fetchReproductions(country) {
+  function fetchCatalog(country) {
     tabsContainer.innerHTML = '';
 
     fetch('./files/data.json')
@@ -27,7 +27,7 @@ function tabs() {
       });
   }
 
-  fetchReproductions('France');
+  fetchCatalog('France');
 
   tabsControlButton.forEach((el) => {
     el.addEventListener('click', (event) => {
@@ -46,7 +46,7 @@ function tabs() {
       tabsContainer.classList.remove('tabs-animation');
 
       setTimeout(() => {
-        fetchReproductions(country);
+        fetchCatalog(country);
 
         tabsContainer.classList.add('tabs-animation');
         tabsContainer.classList.remove('tabs-hide-animation');

@@ -107,11 +107,12 @@
   }
 
   li,
-  .cart {
+  .cart-btn {
     cursor: pointer;
+    // z-index: 2;
   }
 
-  .cart {
+  .cart-btn {
     @media (max-width: 550px) {
       margin-right: 15px;
     }
@@ -133,14 +134,14 @@
 
   a:hover,
   li:hover,
-  .cart:hover svg {
+  .cart-btn:hover svg {
     color: var(--dark-green);
     stroke: var(--dark-green);
     transition: all 0.3s ease;
   }
 
   a:active,
-  .cart:active svg {
+  .cart-btn:active svg {
     color: var(--black);
     stroke: var(--black);
     background-color: var(--light-green-btn);

@@ -17,11 +17,14 @@
   @@include('./blocks/header.html')
   <main>
     @@include('./blocks/hero.html')
-    @@include('./blocks/reproductions.html')
+    @@include('./blocks/catalog.html')
     @@include('./blocks/promo.html')
     @@include('./blocks/about.html')
   </main>
   @@include('./blocks/footer.html')
+
+  <div class="overlay js-close-cart"></div>
+  @@include('./blocks/cartPopup.html')
 
   <script src="./js/index.bundle.js"></script>
 </body>

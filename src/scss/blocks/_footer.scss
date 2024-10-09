@@ -6,8 +6,8 @@
   display: grid;
   align-items: start;
   grid-template-areas:
-    'logo reproductions novelties about socials'
-    'contact reproductions novelties about socials';
+    'logo catalog novelties about socials'
+    'contact catalog novelties about socials';
 
   &__logo {
     grid-area: logo;
@@ -20,8 +20,8 @@
     margin-right: 115px;
   }
 
-  &__reproductions {
-    grid-area: reproductions;
+  &__rcatalog {
+    grid-area: catalog;
     margin-right: 60px;
   }
 
@@ -44,7 +44,7 @@
 
     grid-template-areas:
       'logo logo contact contact'
-      'reproductions novelties about socials';
+      'catalog novelties about socials';
 
     &__logo {
       margin-bottom: 50px;
@@ -57,7 +57,7 @@
       margin-right: 0px;
     }
 
-    &__reproductions {
+    &__catalog {
       margin-right: 0px;
     }
 
@@ -82,7 +82,7 @@
 
     grid-template-areas:
       'logo contact contact'
-      'reproductions novelties about'
+      'catalog novelties about'
       'socials socials socials';
 
     &__logo {
@@ -96,7 +96,7 @@
       margin-right: 0px;
     }
 
-    &__reproductions {
+    &__catalog {
       margin-right: 0px;
       margin-bottom: 30px;
     }
@@ -131,7 +131,7 @@
 
     grid-template-areas:
       'logo logo'
-      'contact reproductions'
+      'contact catalog'
       'novelties about'
       'socials socials';
 
@@ -139,7 +139,7 @@
       margin-bottom: 20px;
     }
 
-    &__reproductions {
+    &__catalog {
       margin-bottom: 20px;
     }
 
