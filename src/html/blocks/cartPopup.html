@@ -4,13 +4,45 @@
     <div class="cart-empty-container">
       <div class="cart-empty">Ваша корзина пуста</div>
       <div class="icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          viewBox="0 0 24 24"
+        >
           <path
-            d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z" />
+            d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"
+          />
         </svg>
       </div>
     </div>
-    <div class="cart-order-container"></div>
-  </div>
+    <div class="cart-order-container hidden">
+      <div class="cart-order">Ваш заказ</div>
+      <!-- <form action="server.php" method="POST" class="column aic"> -->
+        <ul class="cart-list">
+          <!-- <li class="cart-item">
+            <span class="close-btn"></span>
+            <div class="cart-item-container">
+              <img class="cart-item-img" src="./img/03.jpg" alt="img" />
+              <div class="cart-text">
+                <div class="cart-item-title">Title</div>
+                <div class="cart-item-price">Price</div>
+              </div>
+            </div>
+          </li> -->
+        </ul>
 
+        <div class="cart-total-container">
+          <h3 class="title">Итого</h3>
+          <div>
+            <span class="total-price">14 000</span>
+            <span class="rouble"></span>
+          </div>
+        </div>
+
+          <button class="cart-btn btn" type="submit" class="btn-order">Оформить заказ</button>
+
+      <!-- </form> -->
+    </div>
+  </div>
 </div>

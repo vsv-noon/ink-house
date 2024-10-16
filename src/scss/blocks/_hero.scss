@@ -57,11 +57,6 @@
   }
 
   h1 {
-    font-family: var(--font-main);
-    font-weight: var(--fontWeight-main);
-    color: var(--black);
-    font-size: 60px;
-    line-height: 66px;
     margin-bottom: 20px;
 
     span {
@@ -69,19 +64,14 @@
     }
 
     @media (max-width: 768px) {
-      font-size: 40px;
       line-height: 40px;
     }
 
     @media (max-width: 700px) {
-      font-size: 36px;
-      line-height: 36px;
       margin-bottom: 10px;
     }
 
     @media (max-width: 550px) {
-      font-size: 30px;
-      line-height: 30px;
       margin-bottom: 17px;
     }
   }

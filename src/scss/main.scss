@@ -1,6 +1,17 @@
 /* Base */
+@import "./base/base";
 @import "./base/vars";
-@import "./base/common";
+@import "./base/typography";
 
 /* Blocks */
-@import "./blocks/*.scss";
+@import "./blocks/header";
+@import "./blocks/mobile-menu";
+@import "./blocks/hero";
+@import "./blocks/catalog";
+@import "./blocks/card";
+@import "./blocks/promo";
+@import "./blocks/about";
+@import "./blocks/footer";
+@import "./blocks/logo";
+@import "./blocks/cart-popup";
+

@@ -16,10 +16,10 @@ function tabs() {
             <div class="card">
               <img class="card-img" src=${item.img} alt="img">
               <h4>${item.author}</h4>
-              <h3>${item.title}</h3>
+              <h3 class="card-title">${item.title}</h3>
               <p class="description">${item.description}</p>
               <p class="price">${item.price}</p>
-              <button class="btn">В корзину</button>
+              <button class="btn buy-btn">В корзину</button>
             </div>
             `;
           }

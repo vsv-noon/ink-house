@@ -163,11 +163,11 @@
     font-family: var(--font-main);
     font-weight: var(--fontWeight-main);
     color: var(--black);
-    font-size: 20px;
+    font-size: remy(20);
     line-height: 23.48px;
 
     @media (max-width: 550px) {
-      font-size: 16px;
+      font-size: remy(16);
       line-height: 18.78px;
     }
   }
@@ -178,11 +178,11 @@
     font-weight: var(--fontWeight-main);
     color: var(--light-gray);
     text-decoration: none;
-    font-size: 18px;
+    font-size: remy(18);
     line-height: 27px;
 
     @media (max-width: 700px) {
-      font-size: 16px;
+      font-size: remy(16);
       line-height: 24px;
     }
   }
@@ -208,6 +208,7 @@
     transition: all 0.3 ease;
   }
 
+  .footer-link:hover h3,
   .footer-link:hover,
   .svg-img:hover {
     color: #598D66;
@@ -227,7 +228,7 @@
       font-family: var(--font-main);
       font-weight: var(--fontWeight-main);
       color: var(--light-gray);
-      font-size: 12px;
+      font-size: remy(12);
       line-height: 14.4px;
     }
   }
