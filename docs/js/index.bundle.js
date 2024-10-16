@@ -166,7 +166,11 @@ function tabs() {
           if (item.country === country) {
             tabsContainer.innerHTML += `
             <div class="card">
-              <img class="card-img" src=${item.img} alt="img">
+              <picture>
+                <source srcset="${item.img}.webp" type="image/webp">
+                <img class="card-img" src="${item.img}.jpg" alt="img">
+              </picture>
+
               <h4>${item.author}</h4>
               <h3 class="card-title">${item.title}</h3>
               <p class="description">${item.description}</p>

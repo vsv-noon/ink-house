@@ -14,6 +14,6 @@ module.exports = {
   },
 
   fonter: {
-    formats: ["ttf", "eot", "woff", "svg", "otf"]
+    formats: ["ttf", "woff", "svg", "eot", "otf"]
   }
 }
