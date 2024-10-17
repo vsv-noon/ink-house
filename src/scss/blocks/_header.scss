@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
-  background-color: var(--light-green);
+  background-color: $light-green;
 
   @media (max-width: 1000px) {
     padding: 38px 39px 27px;
@@ -30,10 +30,10 @@
     @media (max-width: 700px) {
       justify-content: center;
       width: 100%;
-      background-color: #fff;
     }
-
+    
     @media (max-width: 550px) {
+      background-color: #fff;
       padding: 17px 0;
       z-index: 10;
     }
@@ -68,7 +68,7 @@
       width: 100%;
       justify-content: space-between;
       align-items: center;
-      background-color: var(--light-green);
+      background-color: $light-green;
       padding: 0 0 17px 0;
     }
   }
@@ -95,14 +95,14 @@
       align-items: center;
       width: 100vw;
       height: 100vh;
-      background-color: var(--light-green);
+      background-color: $light-green;
       overflow: hidden;
       transition-duration: 0.5s;
       z-index: 1;
     }
   }
 
-  .nav-menu-open {
+  .nav .nav-menu-open {
     left: 0;
   }
 
@@ -120,14 +120,14 @@
 
   a {
     text-decoration: none;
-    font-family: var(--font-main);
-    font-weight: var(--fontWeight-main);
-    color: var(--black);
-    font-size: remy(20);
+    font-family: $font-main;
+    font-weight: $fontWeight-main;
+    color: $black;
+    font-size: rem(20);
     line-height: 23.48px;
 
     @media (max-width: 768px) {
-      font-size: remy(18);
+      font-size: rem(18);
       line-height: 21.13px;
     }
   }
@@ -135,16 +135,16 @@
   a:hover,
   li:hover,
   .cart-btn:hover svg {
-    color: var(--dark-green);
-    stroke: var(--dark-green);
+    color: $dark-green;
+    stroke: $dark-green;
     transition: all 0.3s ease;
   }
 
   a:active,
   .cart-btn:active svg {
-    color: var(--black);
-    stroke: var(--black);
-    background-color: var(--light-green-btn);
+    color: $black;
+    stroke: $black;
+    background-color: $light-green-btn;
     transition: all 0.3s ease;
   }
 }

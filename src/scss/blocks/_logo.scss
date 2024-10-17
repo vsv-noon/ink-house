@@ -8,16 +8,16 @@
 
   // &:hover p,
   // &:hover svg {
-  //   color: var(--dark-green);
-  //   fill: var(--dark-green);
+  //   color: $dark-green;
+  //   fill: $dark-green;
   //   transition: all 0.3s ease;
   // }
 }
 
 .logo-text {
-  font-family: var(--font-main);
-  font-weight: var(--fontWeight-bold);
-  color: var(--green);
-  font-size: 20px;
-  line-height: 23.48px;
+  font-family: $font-main;
+  font-weight: $fontWeight-bold;
+  color: $green;
+  font-size: rem(20);
+  line-height: 1.1;
 }

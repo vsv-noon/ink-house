@@ -1,46 +1,46 @@
 h1 {
-  font-family: var(--font-main);
-  font-weight: var(--fontWeight-main);
-  color: var(--black);
-  font-size: remy(60);
+  font-family: $font-main;
+  font-weight: $fontWeight-main;
+  color: $black;
+  font-size: rem(60);
   line-height: 66px;
 
   span {
-    color: var(--green);
+    color: $green;
   }
 
   @media (max-width: 768px) {
-    font-size: remy(40);
+    font-size: rem(40);
     line-height: 1;
   }
 
   @media (max-width: 700px) {
-    font-size: remy(36);
+    font-size: rem(36);
     line-height: 1;
   }
 
   @media (max-width: 550px) {
-    font-size: remy(30);
+    font-size: rem(30);
     line-height: 1;
 
   }
 }
 
 h2 {
-  font-family: var(--font-main);
-  font-weight: var(--fontWeight-main);
-  color: var(--black);
+  font-family: $font-main;
+  font-weight: $fontWeight-main;
+  color: $black;
 
-  font-size: remy(40);
+  font-size: rem(40);
   line-height: 1;
 
   @media (max-width: 768px) {
-    font-size: remy(30);
+    font-size: rem(30);
     line-height: 1;
   }
 
   @media (max-width: 700px) {
-    font-size: remy(24);
+    font-size: rem(24);
     line-height: 27px;
   }
 
@@ -50,19 +50,19 @@ h2 {
 }
 
 p {
-  font-family: var(--font-main);
-  font-weight: var(--fontWeight-main);
-  color: var(--black);
-  font-size: remy(18);
-  line-height: 27px;
+  font-family: $font-main;
+  font-weight: $fontWeight-main;
+  color: $black;
+  font-size: rem(18);
+  line-height: 1.5;
 
   @media (max-width: 700px) {
-    font-size: remy(16);
+    font-size: rem(16);
     line-height: 21px;
   }
 
   @media (max-width: 550px) {
-    font-size: remy(14);
+    font-size: rem(14);
     line-height: 21px;
   }
 }

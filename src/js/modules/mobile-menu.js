@@ -4,8 +4,10 @@ function mobileMenu() {
 
   mobileMenuButton.addEventListener('click', () => {
     mobileMenuButton.classList.toggle('menu-active');
+    
     mobileMenu.classList.toggle('nav-menu-open');
     document.body.classList.toggle('lock');
+    console.log(1);
   })
 
   document.addEventListener('click', (event) => {

@@ -35,12 +35,12 @@
 
   &.menu-active::before {
     transform: translateY(0) rotate(45deg);
-    background-color: var(--black);
+    background-color: $black;
     box-shadow: 0 0 #555;
   }
 
   &.menu-active::after {
     transform: translateY(0) rotate(-45deg);
-    background-color: var(--black);
+    background-color: $black;
   }
 }

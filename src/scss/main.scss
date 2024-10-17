@@ -1,11 +1,11 @@
 /* Base */
+@import "./base/variables";
 @import "./base/fonts";
 @import "./base/base";
-@import "./base/vars";
 @import "./base/typography";
 
 /* Blocks */
-@import "./blocks/header";
+@import "./blocks/logo";
 @import "./blocks/mobile-menu";
 @import "./blocks/hero";
 @import "./blocks/catalog";
@@ -13,6 +13,6 @@
 @import "./blocks/promo";
 @import "./blocks/about";
 @import "./blocks/footer";
-@import "./blocks/logo";
 @import "./blocks/cart-popup";
+@import "./blocks/header";
 

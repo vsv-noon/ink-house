@@ -4,6 +4,7 @@ const cartData = () => {
   const cartList = document.querySelector('.cart-list');
   const cartEmpty = document.querySelector('.cart-empty-container');
   const cartOrder = document.querySelector('.cart-order-container');
+  const formatter = new Intl.NumberFormat('ru');
   
   const productInfo = {};
   
@@ -25,6 +26,7 @@ const cartData = () => {
         productInfo.image = imageCard.src;
 
         renderProductInCart();
+        calculateTotalCartValue();
 
         toggleCartStatus();
       }
@@ -59,6 +61,8 @@ const cartData = () => {
       if (event.target.classList.contains('js-remove')) {
         const cartItem = event.target.closest('.cart-item');
         cartItem.remove();
+
+        calculateTotalCartValue();
         toggleCartStatus();
       }
     })
@@ -76,8 +80,23 @@ const cartData = () => {
   
     }
   }
-}
 
+  const calculateTotalCartValue = () => {
+    const cartItems = document.querySelectorAll('.cart-item');
+    const cartTotalPrice = document.querySelector('.total-price');
 
+    let totalCartValue = 0;
+
+    cartItems.forEach((item) => {
+      const itemPrice = item.querySelector('.cart-item-price');
+
+      totalCartValue += parseInt(itemPrice.textContent.split(' ').join(''));
+    });
+
+    cartTotalPrice.textContent = formatter.format(totalCartValue);
+  };
+
+  calculateTotalCartValue();
+};
 
 export { cartData };

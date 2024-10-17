@@ -17,7 +17,7 @@
   top: 5px;
   height: 20px;
   width: 2px;
-  background-color: var(--black);
+  background-color: $black;
 }
 
 .close-btn::before {
@@ -60,15 +60,15 @@
     min-height: calc(100vh - 100px);
 
     .cart-empty {
-      font-family: var(--font-main);
-      font-size: 28px;
+      font-family: $font-main;
+      font-size: rem(28);
       font-weight: 700;
-      color: var(--light-gray);
+      color: $light-gray;
       margin-bottom: 30px;
     }
   
     .cart-empty-container .icon {
-      fill: var(--green);
+      fill: $green;
     }
   }
 
@@ -85,34 +85,30 @@
   }
 
   .cart-order {
-    font-family: var(--font-main);
-    font-weight: var(--fontWeight-bold);
-    font-size: 28px;
+    font-family: $font-main;
+    font-weight: $fontWeight-bold;
+    font-size: rem(28);
     margin-bottom: 30px;
   }
 
   .cart-item {
     position: relative;
     margin: 20px;
+    .cart-item-container {
+      display: flex;
+    }
+
+    .close-btn {
+      top: -15px;
+    }    
+  
+    .cart-item-img {
+      width: 100px;
+      height: 100px;
+    }
   }
 
-  .cart-item-container {
-    display: flex;
-  }
 
-  .cart-item .close-btn::before .close-btn::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    height: 15px;
-    width: 2px;
-    background: #000;
-  }
-
-  .cart-item-img {
-    width: 100px;
-    height: 100px;
-  }
 
   .cart-text {
     margin-top: 30px;
@@ -124,9 +120,9 @@
 
   .cart-item-title,
   .cart-item-price {
-    font-family: var(--font-main);
-    font-weight: var(--fontWeight-main);
-    color: var(--black);
+    font-family: $font-main;
+    font-weight: $fontWeight-main;
+    color: $black;
     font-size: 20px;
   }
 
@@ -135,8 +131,8 @@
     width: 290px;
     height: 50px;
     background-color: transparent;
-    border: 1px solid var(--green);
-    color: var(--green);
+    border: 1px solid $green;
+    color: $green;
     font-size: 20px;
     line-height: 23, 48px;
     transition: all 0.3s ease;
@@ -159,16 +155,24 @@
   }
 
   .btn:hover {
-    color: var(--white);
-    background-color: var(--green);
+    color: $white;
+    background-color: $green;
   }
 
   .btn:active {
-    color: var(--green);
-    background-color: var(--light-green-btn);
+    color: $green;
+    background-color: $light-green-btn;
   }
 
   .hidden {
     display: none;
+  }
+
+  .cart-total-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: rem(20);
+    padding: 30px;
   }
 }
