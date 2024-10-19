@@ -108,8 +108,7 @@
 
   li,
   .cart-btn {
-    cursor: pointer;
-    // z-index: 2;
+    cursor: pointer; 
   }
 
   .cart-btn {
@@ -120,11 +119,10 @@
 
   a {
     text-decoration: none;
-    font-family: $font-main;
-    font-weight: $fontWeight-main;
     color: $black;
     font-size: rem(20);
-    line-height: 23.48px;
+    line-height: 1;
+    transition: all 0.3s ease;
 
     @media (max-width: 768px) {
       font-size: rem(18);
@@ -133,18 +131,12 @@
   }
 
   a:hover,
-  li:hover,
-  .cart-btn:hover svg {
+  li:hover {
     color: $dark-green;
-    stroke: $dark-green;
-    transition: all 0.3s ease;
   }
 
-  a:active,
-  .cart-btn:active svg {
-    color: $black;
-    stroke: $black;
+  a:active {
+    color: $black;   
     background-color: $light-green-btn;
-    transition: all 0.3s ease;
   }
 }

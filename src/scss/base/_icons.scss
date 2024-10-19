@@ -1,0 +1,37 @@
+.svg-logo {
+  width: 35px;
+  height: 35px;
+  fill: #598D66;
+}
+
+.svg-cart {
+  width: 24px;
+  height: 24px;
+  stroke: $black;
+  fill: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    stroke: $dark-green;
+  }
+
+  &:active {
+    stroke: $black;
+  }
+}
+
+.svg-footer {
+  width: 24px;
+  height: 24px;
+  fill: #2C2D35;
+  transition: all 0.3s ease;
+
+
+  &:hover {
+    fill: rgb(89, 141, 102);
+  }
+
+  &:active {
+    fill: $black;
+  }
+}

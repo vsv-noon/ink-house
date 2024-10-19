@@ -23,6 +23,7 @@
     height: 422px;
     margin-bottom: 15px;
 
+
     @media (max-width: 768px) {
       width: 290px;
     }
@@ -39,59 +40,47 @@
   }
 
   h4 {
-    font-family: $font-main;
-    font-weight: $fontWeight-main;
     color: $light-gray;
-    font-size: 18px;
-    line-height: 21.13px;
+    font-size: rem(18);
+    line-height: 1;
     margin-bottom: 10px;
 
     @media (max-width: 700px) {
-      font-size: 16px;
-      line-height: 18.78px;
+      font-size: rem(16);
     }
   }
 
   h3 {
-    font-family: $font-main;
-    font-weight: $fontWeight-main;
     color: $black;
-    font-size: 30px;
-    line-height: 35.22px;
+    font-size: rem(30);
+    line-height: 1.2;
     margin-bottom: 8px;
 
     @media (max-width: 700px) {
-      font-size: 24px;
-      line-height: 28.18px;
+      font-size: rem(24);
     }
   }
 
   .description {
-    font-family: $font-main;
-    font-weight: $fontWeight-main;
     color: $black;
-    font-size: 18px;
-    line-height: 21.13px;
+    font-size: rem(18);
+    line-height: 1.2;
     margin-bottom: 30px;
 
     @media (max-width: 700px) {
-      font-size: 16px;
-      line-height: 18.78px;
+      font-size: rem(16);
     }
   }
 
   .price {
-    font-family: $font-main;
-    font-weight: $fontWeight-main;
     color: $green;
-    font-size: 24px;
-    line-height: 28.18px;
+    font-size: rem(24);
+    line-height: 1.2;
 
     @media (max-width: 700px) {
       position: absolute;
       bottom: 90px;
-      font-size: 20px;
-      line-height: 23.48px;
+      font-size: rem(20);
     }
   }
 
@@ -103,8 +92,8 @@
     background-color: transparent;
     border: 1px solid $green;
     color: $green;
-    font-size: 20px;
-    line-height: 23, 48px;
+    font-size: rem(20);
+    line-height: 1.2;
     transition: all 0.3s ease;
     cursor: pointer;
 
@@ -115,8 +104,7 @@
     @media (max-width: 700px) {
       width: 200px;
       height: 50px;
-      font-size: 18px;
-      line-height: 21.13px;
+      font-size: rem(18);
     }
 
     @media (max-width: 550px) {

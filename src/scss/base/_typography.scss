@@ -1,9 +1,7 @@
 h1 {
-  font-family: $font-main;
-  font-weight: $fontWeight-main;
   color: $black;
   font-size: rem(60);
-  line-height: 66px;
+  line-height: 1.1;
 
   span {
     color: $green;
@@ -27,8 +25,6 @@ h1 {
 }
 
 h2 {
-  font-family: $font-main;
-  font-weight: $fontWeight-main;
   color: $black;
 
   font-size: rem(40);
@@ -41,28 +37,26 @@ h2 {
 
   @media (max-width: 700px) {
     font-size: rem(24);
-    line-height: 27px;
+    line-height: 1;
   }
 
   @media (max-width: 550px) {
-    line-height: 25px;
+    line-height: 1;
   }
 }
 
 p {
-  font-family: $font-main;
-  font-weight: $fontWeight-main;
   color: $black;
   font-size: rem(18);
   line-height: 1.5;
 
   @media (max-width: 700px) {
     font-size: rem(16);
-    line-height: 21px;
+    line-height: 1.32;
   }
 
   @media (max-width: 550px) {
     font-size: rem(14);
-    line-height: 21px;
+    line-height: 1.5;
   }
 }

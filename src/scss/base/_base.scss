@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: $font-main, sans-serif;
+  font-family: $font-main;
+  font-weight: $fontWeight-main;
 }
 
 .lock {

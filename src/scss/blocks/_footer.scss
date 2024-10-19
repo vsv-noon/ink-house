@@ -54,26 +54,24 @@
       width: 100%;
       display: flex;
       justify-content: end;
-      margin-right: 0px;
+
     }
 
     &__catalog {
-      margin-right: 0px;
+      margin-right: 30px;
     }
 
     &__novelties {
-      margin-right: 0px;
+      margin-right: 30px;
     }
 
     &__about {
-      margin-right: 0px;
+      margin-right: 30px;
     }
 
     &__socials-container {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: end;
     }
   }
 
@@ -111,7 +109,7 @@
 
     &__socials-container {
       position: relative;
-
+      align-items: center;
       padding-left: 20px;
     }
 
@@ -160,8 +158,6 @@
   }
 
   h3 {
-    font-family: $font-main;
-    font-weight: $fontWeight-main;
     color: $black;
     font-size: rem(20);
     line-height: 23.48px;
@@ -174,12 +170,13 @@
 
   &__contact,
   a {
-    font-family: $font-main;
-    font-weight: $fontWeight-main;
     color: $light-gray;
     text-decoration: none;
     font-size: rem(18);
     line-height: 27px;
+
+ 
+ 
 
     @media (max-width: 700px) {
       font-size: rem(16);
@@ -203,16 +200,13 @@
     gap: 30px;
   }
 
-  .footer-link,
-  .svg-img {
+  .footer-link {
     transition: all 0.3 ease;
   }
 
   .footer-link:hover h3,
-  .footer-link:hover,
-  .svg-img:hover {
-    color: #598D66;
-    fill: #598D66;
+  .footer-link:hover {
+    color: #598D66;  
   }
 
   .copyright {
@@ -225,8 +219,6 @@
     }
 
     p {
-      font-family: $font-main;
-      font-weight: $fontWeight-main;
       color: $light-gray;
       font-size: rem(12);
       line-height: 14.4px;
