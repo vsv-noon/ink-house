@@ -1,7 +1,7 @@
 h1 {
   color: $black;
   font-size: rem(60);
-  line-height: 1.1;
+  line-height: 1.1;  
 
   span {
     color: $green;
@@ -49,6 +49,7 @@ p {
   color: $black;
   font-size: rem(18);
   line-height: 1.5;
+  letter-spacing: rem(-0.2);
 
   @media (max-width: 700px) {
     font-size: rem(16);
