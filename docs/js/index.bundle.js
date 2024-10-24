@@ -9,6 +9,9 @@ const cartData = () => {
   const cartEmpty = document.querySelector('.cart-empty-container');
   const cartOrder = document.querySelector('.cart-order-container');
   const formatter = new Intl.NumberFormat('ru');
+
+  const iconCart = document.querySelector('.icon-cart');
+  const iconCartSpan = iconCart.querySelector('span');
   
   const productInfo = {};
   
@@ -90,14 +93,25 @@ const cartData = () => {
     const cartTotalPrice = document.querySelector('.total-price');
 
     let totalCartValue = 0;
+    let totalQuantity = 0
 
     cartItems.forEach((item) => {
       const itemPrice = item.querySelector('.cart-item-price');
 
       totalCartValue += parseInt(itemPrice.textContent.split(' ').join(''));
+      totalQuantity++;
     });
 
     cartTotalPrice.textContent = formatter.format(totalCartValue);
+
+    iconCartSpan.innerHTML = totalQuantity;
+
+    if (totalQuantity === 0) {
+      iconCartSpan.style.display = 'none';
+    } else {
+      iconCartSpan.style.display = 'block';
+
+    }
   };
 
   calculateTotalCartValue();

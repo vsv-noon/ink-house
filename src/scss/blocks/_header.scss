@@ -108,7 +108,23 @@
 
   li,
   .cart-btn {
-    cursor: pointer; 
+    cursor: pointer;
+    position: relative;
+  }
+
+  .cart-btn span {
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    left: rem(1);
+    top: rem(1);
+    background-color: $green;
+    font-size: rem(10);
+    font-weight: 700;
+    line-height: rem(13);
+    text-align: center;
+    color: $white;
   }
 
   .cart-btn {
