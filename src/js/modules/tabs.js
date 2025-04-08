@@ -11,6 +11,8 @@ function tabs() {
       })
       .then((data) => {
         data.forEach((item) => {
+          console.log(item.country)
+          console.log(country)
           if (item.country === country) {
             tabsContainer.innerHTML += `
             <div class="card">

@@ -1,12 +1,12 @@
 .svg-logo {
-  width: 35px;
-  height: 35px;
+  width: rem(35);
+  height: rem(35);
   fill: #598D66;
 }
 
 .svg-cart {
-  width: 24px;
-  height: 24px;
+  width: rem(24);
+  height: rem(24);
   stroke: $black;
   fill: none;
   transition: all 0.3s ease;
@@ -21,11 +21,11 @@
 }
 
 .svg-footer {
-  width: 24px;
-  height: 24px;
+  width: rem(24);
+  height: rem(24);
   fill: #2C2D35;
   transition: all 0.3s ease;
-
+  border-radius: rem(5);
 
   &:hover {
     fill: rgb(89, 141, 102);
